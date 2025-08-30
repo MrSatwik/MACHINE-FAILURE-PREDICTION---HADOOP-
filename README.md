@@ -45,9 +45,13 @@ The solution helps industries **reduce downtime, lower repair costs, and improve
 - Pressure > 100 psi
 
 ---
-MachineID Temperature Vibration Pressure␣
-Machine1 80.5 45.2 110␣␣
-Machine2 65.2 30.1 90␣␣␣
+MachineID Temperature Vibration Pressure
+
+
+Machine1 80.5 45.2 110
+
+Machine2 65.2 30.1 90
+
 Machine3 85.0 60.5 120␣␣␣␣
 
 
