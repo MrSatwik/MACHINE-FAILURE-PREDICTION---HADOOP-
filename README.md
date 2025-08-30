@@ -60,12 +60,13 @@ start-dfs.sh
 start-yarn.sh
 
 ---
-2️⃣ Upload Dataset to HDFS
+## 2️⃣ Upload Dataset to HDFS
+
 hdfs dfs -mkdir -p /satwik/predict/input
 hdfs dfs -put data.csv /satwik/predict/input
 
 ---
-3️⃣ Compile and Run MapReduce Program
+## 3️⃣ Compile and Run MapReduce Program
 # Compile
 mkdir machine_classes
 javac -classpath `hadoop classpath` -d machine_classes SensorDataMapper.java SensorDataReducer.java MachineFailurePrediction.java
@@ -75,29 +76,29 @@ jar -cvf MachineFailurePrediction.jar -C machine_classes/ .
 hadoop jar MachineFailurePrediction.jar MachineFailurePrediction /satwik/predict/input /satwik/predict/predict_output
 
 ---
-4️⃣ View Results
+## 4️⃣ View Results
 hdfs dfs -cat /satwik/predict/predict_output/part-r-00000
 
 ---
-📊 Sample Output
+## 📊 Sample Output
 Machine1  Failure Expected: Temperature > 75, Vibration > 50
 Machine3  Failure Expected: Pressure > 100
 Machine7  Failure Expected: Temperature > 75
 
 ---
-✅ Results & Conclusion
+## ✅ Results & Conclusion
 ✔️ Processes large IoT datasets efficiently with Hadoop.
 ✔️ Detects machines at risk of failure before breakdown.
 ✔️ Improves operational reliability & scalability for Industry 4.0.
 
 ----
-🚀 Future Enhancements
+## 🚀 Future Enhancements
 🔹 Real-Time Processing → Apache Spark / Kafka
 🔹 Machine Learning Models → Adaptive anomaly detection
 🔹 Visualization Dashboards → Monitor machine health
 
 ---
-👨‍💻 Contributors
+## 👨‍💻 Contributors
 Meenugu Hani Satwik
 Sureddy D B S N Rishi
 Arjila Kasi
