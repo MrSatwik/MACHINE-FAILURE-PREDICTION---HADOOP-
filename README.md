@@ -87,7 +87,7 @@ Machine7  Failure Expected: Temperature > 75
 
 ---
 ## ✅ Results & Conclusion
-✔️ Processes large IoT datasets efficiently with Hadoop.
+✔️ Processes large IoT datasets efficiently with Hadoop ␣␣  
 ✔️ Detects machines at risk of failure before breakdown.
 ✔️ Improves operational reliability & scalability for Industry 4.0.
 
