@@ -45,10 +45,10 @@ The solution helps industries **reduce downtime, lower repair costs, and improve
 - Pressure > 100 psi
 
 ---
-MachineID Temperature Vibration Pressure
-Machine1 80.5 45.2 110
-Machine2 65.2 30.1 90
-Machine3 85.0 60.5 120
+MachineID Temperature Vibration Pressure␣␣
+Machine1 80.5 45.2 110␣␣
+Machine2 65.2 30.1 90␣␣
+Machine3 85.0 60.5 120␣␣
 
 
 ---
@@ -81,26 +81,26 @@ hdfs dfs -cat /satwik/predict/predict_output/part-r-00000
 
 ---
 ## 📊 Sample Output
-Machine1  Failure Expected: Temperature > 75, Vibration > 50
-Machine3  Failure Expected: Pressure > 100
-Machine7  Failure Expected: Temperature > 75
+Machine1  Failure Expected: Temperature > 75, Vibration > 50␣
+Machine3  Failure Expected: Pressure > 100␣
+Machine7  Failure Expected: Temperature > 75␣
 
 ---
 ## ✅ Results & Conclusion
-✔️ Processes large IoT datasets efficiently with Hadoop ␣␣  
-✔️ Detects machines at risk of failure before breakdown.
-✔️ Improves operational reliability & scalability for Industry 4.0.
+✔️ Processes large IoT datasets efficiently with Hadoop ␣  
+✔️ Detects machines at risk of failure before breakdown␣
+✔️ Improves operational reliability & scalability for Industry 4.0.␣
 
 ----
 ## 🚀 Future Enhancements
-🔹 Real-Time Processing → Apache Spark / Kafka
-🔹 Machine Learning Models → Adaptive anomaly detection
-🔹 Visualization Dashboards → Monitor machine health
+🔹 Real-Time Processing → Apache Spark / Kafka␣
+🔹 Machine Learning Models → Adaptive anomaly detection␣
+🔹 Visualization Dashboards → Monitor machine health␣
 
 ---
 ## 👨‍💻 Contributors
-Meenugu Hani Satwik
-Sureddy D B S N Rishi
-Arjila Kasi
-Andey Lokesh Naidu
+Meenugu Hani Satwik␣
+Sureddy D B S N Rishi␣
+Arjila Kasi␣
+Andey Lokesh Naidu␣
 
