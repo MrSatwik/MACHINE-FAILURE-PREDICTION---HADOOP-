@@ -53,18 +53,18 @@ Machine3 85.0 60.5 120
 
 ---
 
-## ⚙️ Implementation Workflow  
+###⚙️ Implementation Workflow  
 
-### 1️⃣ Start Hadoop Services
+## 1️⃣ Start Hadoop Services
 ```bash
 start-dfs.sh
 start-yarn.sh
 
-2️⃣ Upload Dataset to HDFS
+##2️⃣ Upload Dataset to HDFS
 hdfs dfs -mkdir -p /satwik/predict/input
 hdfs dfs -put data.csv /satwik/predict/input
 
-3️⃣ Compile and Run MapReduce Program
+##3️⃣ Compile and Run MapReduce Program
 # Compile
 mkdir machine_classes
 javac -classpath `hadoop classpath` -d machine_classes SensorDataMapper.java SensorDataReducer.java MachineFailurePrediction.java
@@ -107,4 +107,3 @@ Arjila Kasi
 
 Andey Lokesh Naidu
 
-📄 **Example Data Set:**  
