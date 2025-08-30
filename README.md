@@ -13,8 +13,6 @@
 6. [Results & Conclusion](#-results--conclusion)  
 7. [Future Enhancements](#-future-enhancements)  
 8. [Contributors](#-contributors)  
-9. [References](#-references)  
-10. [License](#-license)  
 ---
 ## 📌 Project Overview  
 This project implements a **Predictive Maintenance System** using **Hadoop MapReduce**.  
@@ -37,6 +35,7 @@ The solution helps industries **reduce downtime, lower repair costs, and improve
 - Temperature > 75 °C  
 - Vibration > 50 units  
 - Pressure > 100 psi
+---
 📄 Example Data Set:
 MachineID  Temperature  Vibration  Pressure
 Machine1             80.5             45.2             110
@@ -46,10 +45,13 @@ Machine3             85.0             60.5             120
 1️⃣   Start Hadoop Services
 start-dfs.sh
 start-yarn.sh 
+
+---
 2️⃣   Upload Dataset to HDFS
 hdfs dfs -mkdir -p /satwik/predict/input
 hdfs dfs -put data.csv /satwik/predict/input
 
+----
 3️⃣   Compile and Run MapReduce Program
 # Compile
 mkdir machine_classes
@@ -61,6 +63,8 @@ jar -cvf MachineFailurePrediction.jar -C machine_classes/ .
 # Run Job
 hadoop jar MachineFailurePrediction.jar MachineFailurePrediction /satwik/predict/input /satwik/predict/predict_output
 
+----
+
 4️⃣   View Results
 hdfs dfs -cat /satwik/predict/predict_output/part-r-00000
 
@@ -68,6 +72,8 @@ hdfs dfs -cat /satwik/predict/predict_output/part-r-00000
 Machine1  Failure Expected: Temperature > 75, Vibration > 50
 Machine3  Failure Expected: Pressure > 100
 Machine7  Failure Expected: Temperature > 75
+
+-----
 
 ✅ Results & Conclusion
 
